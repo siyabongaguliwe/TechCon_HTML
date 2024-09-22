@@ -3,44 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register for TechCon 2024</title>
+    <title>Contact Us - TechCon 2024</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
-        <h1>Register for TechCon 2024</h1>
+        <h1>Contact Us</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Registration Form</h2>
-        <form action="submit_registration.php" method="post">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+        <h2>Get in Touch</h2>
+        <section>
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:siyabongaguliwe1@gmail.com">email@example.com</a></p>
+            <p>Follow us on social media:</p>
+            <ul>
+                <li><a href="https://twitter.com/TechCon" target="_blank">Twitter</a></li>
+                <li><a href="https://facebook.com/TechCon" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com/TechCon" target="_blank">Instagram</a></li>
+            </ul>
+        </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <section>
+            <h3>Our Location</h3>
+            <p>114 Pitts Avenue<br>
+               Weavind Park, Pretoria<br>
+               City of Tshwane Metropolitan Municipality<br>
+               Gauteng, 0020<br>
+               South Africa</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d144.9630579153167!3d-37.81410797975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d1b1f1b1f1b1!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1611816751234!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+        <section>
+            <h3>Contact Us Form</h3>
+            <form action="submit_contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="confirm_password">Confirm Password:</label>
-            <input type="password" id="confirm_password" name="confirm_password" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="terms">
-                <input type="checkbox" id="terms" name="terms" required>
-                I agree to the <a href="terms.html">terms and conditions</a>
-            </label>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Register Now</button>
-        </form>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
 
     <footer>
